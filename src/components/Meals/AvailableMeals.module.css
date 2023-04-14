@@ -1,16 +1,17 @@
 .meals {
 	position: absolute;
+	left: 20px;
+	display: flex;
+	justify-content: center;
 	top: 450px;
-	max-width: 60rem;
-	width: 90%;
+	min-width: 600px;
 	margin: 2rem auto;
 	animation: meals-appear 1s ease-out forwards;
 }
 
 .meals ul {
 	list-style: none;
-	margin: 200px auto auto auto;
-	padding: 0;
+	margin: 10px auto 10px auto;
 }
 
 @keyframes meals-appear {
