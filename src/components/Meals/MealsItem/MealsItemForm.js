@@ -17,7 +17,7 @@ const MealsItemForm = (props) => {
 		if (
 			enteredAmount.trim().lenght === 0 ||
 			enteredAmountNumber < 1 ||
-			enteredAmount > 9
+			enteredAmount > 10
 		) {
 			setAmountIsValid(false);
 			return;
@@ -40,7 +40,7 @@ const MealsItemForm = (props) => {
 				}}
 			/>
 			<button>+ Add</button>
-			{!amountIsValid && <p>Please enter a valid amount (1-5)</p>}
+			{!amountIsValid && <p>Please enter a valid amount (1-10)</p>}
 		</form>
 	);
 };
